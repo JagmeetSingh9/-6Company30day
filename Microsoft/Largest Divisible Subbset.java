@@ -1,4 +1,6 @@
-  int[] dp = new int[nums.length];
+class Solution {
+    public List<Integer> largestDivisibleSubset(int[] nums) {
+          int[] dp = new int[nums.length];
         int[] index = new int[nums.length];
         dp[0] = 1;
         index[0] = -1;
@@ -26,3 +28,5 @@
             i = index[i];
         }
         return result;
+    }
+}
